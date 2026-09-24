@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kına & Düğün</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#f7f3f0;color:#fff}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px}
+.wrap{width:min(980px,100%)}
+h1{color:#2d2630;text-align:center;margin:0 0 8px;font-size:28px}
+.sub{color:#706872;text-align:center;margin:0 0 18px;font-size:15px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{border-radius:24px;padding:22px 14px;box-shadow:0 12px 32px rgba(0,0,0,.15);text-align:center;min-width:0}
+.kina{background:linear-gradient(150deg,#a8335d,#7c2347)}
+.dugun{background:linear-gradient(150deg,#714db0,#513486)}
+.title{font-size:30px;font-weight:900;margin-bottom:8px}
+.date{font-size:18px;font-weight:800;margin-bottom:18px}
+.person{font-size:17px;font-weight:800;margin-bottom:3px}
+.phone{font-size:17px;margin-bottom:18px}
+.actions{display:grid;gap:10px}
+.btn{display:block;text-decoration:none;border-radius:14px;padding:14px 10px;font-size:16px;font-weight:900;background:#fff;color:#2a2430}
+.btn.call{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.52)}
+@media(max-width:520px){
+  body{padding:10px}
+  h1{font-size:23px}
+  .sub{font-size:13px}
+  .grid{gap:8px}
+  .card{padding:18px 8px;border-radius:18px}
+  .title{font-size:24px}
+  .date{font-size:14px;line-height:1.35}
+  .person,.phone{font-size:13px}
+  .btn{font-size:13px;padding:12px 6px}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Etkinlik Seçimi</h1>
+  <p class="sub">Konumu açabilir veya ilgili kişiyi arayabilirsiniz.</p>
+  <div class="grid">
+    <section class="card kina">
+      <div class="title">Kına</div>
+      <div class="date">23 Ekim • 19.00-23.00</div>
+      <div class="person">ERCAN DEMİR</div>
+      <div class="phone">0530 954 66 80</div>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Ye%C5%9Filp%C4%B1nar%20Adnan%20Menderes%20Caddesi%2C%20%C5%9Eht.%20Metin%20Kaya%20Sk.%20No%3A38%20D%3A3%2C%2034065%20Ey%C3%BCpsultan%2F%C4%B0stanbul&travelmode=driving">Konumu Aç</a>
+        <a class="btn call" href="tel:+905309546680">ERCAN DEMİR'i Ara</a>
+      </div>
+    </section>
+    <section class="card dugun">
+      <div class="title">Düğün</div>
+      <div class="date">25 Ekim • 13.00-17.00</div>
+      <div class="person">BEKİR KANAT</div>
+      <div class="phone">0532 312 20 94</div>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=S%C4%B0M%C4%B0T%20SARAYI%20VEGA%20%C4%B0STANBUL%20AVM%2C%20Yunus%20Emre%2C%20L%C3%BCtfi%20Ayka%C3%A7%20Blv.%20No%3A80%20I%20Blok%20Kap%C4%B1%20No%3A73%2C%2034260%20Sultangazi%2F%C4%B0stanbul&travelmode=driving">Konumu Aç</a>
+        <a class="btn call" href="tel:+905323122094">BEKİR KANAT'ı Ara</a>
+      </div>
+    </section>
+  </div>
+</main>
+</body>
+</html>
